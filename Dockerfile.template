@@ -7,6 +7,7 @@ RUN install_packages \
     x11-xserver-utils \
     x11-utils \
     xauth \
+    xfonts-base xfonts-100dpi xfonts-75dpi fonts-unifont \
     xinit \
     xinput \
     xserver-xorg \
