@@ -3,4 +3,5 @@ xset s off -dpms
 
 bash /opt/xserver/config.sh
 
+# matchbox-keyboard&
 matchbox-window-manager -use_titlebar no

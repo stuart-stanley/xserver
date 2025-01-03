@@ -4,6 +4,7 @@ FROM balenalib/$BALENA_ARCH-debian:bullseye
 
 RUN install_packages \
     matchbox-window-manager \
+    matchbox-keyboard \
     x11-xserver-utils \
     x11-utils \
     xauth \
