@@ -1,6 +1,5 @@
-ARG BALENA_ARCH=%%BALENA_ARCH%%
 
-FROM balenalib/$BALENA_ARCH-debian:bullseye
+FROM balenalib/raspberry-pi-debian:bookworm
 
 RUN install_packages \
     matchbox-window-manager \
@@ -22,6 +21,9 @@ WORKDIR /opt/xserver
 COPY src/xinitrc /root/.xinitrc
 
 COPY src/entry.sh src/config.sh VERSION /opt/xserver/
+COPY src/99-vc4.conf /etc/X11/xorg.conf.d/99-vc4.conf
+
+
 
 ENTRYPOINT  ["/bin/bash", "/opt/xserver/entry.sh"]
 

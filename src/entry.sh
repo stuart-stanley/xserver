@@ -115,9 +115,12 @@ then
 	fi
 fi
 
+while true; do
 if [ "$CURSOR" = true ];
 then
     exec startx -- $FORCE_DISPLAY
 else
     exec startx -- $FORCE_DISPLAY -nocursor
 fi
+sleep 10
+done

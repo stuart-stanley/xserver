@@ -1,7 +1,7 @@
 name: xserver
 description: >-
   A simple block that runs an X server for GUI applications
-version: 0.3.2
+version: 0.3.5
 type: sw.block
 assets:
   repository:
