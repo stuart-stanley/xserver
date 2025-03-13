@@ -1,5 +1,5 @@
+FROM balenalib/raspberrypi5-ubuntu:noble
 
-FROM balenalib/raspberry-pi-debian:bookworm
 
 RUN install_packages \
     matchbox-window-manager \
