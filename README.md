@@ -98,3 +98,6 @@ The following environment variables allow configuration of the `xserver` block:
 |`DISPLAY_ROTATE_TOUCH`|`normal`, `left`, `right`, `inverted`|`normal`|Rotates the coordinates for touch screens|
 |`FORCE_DISPLAY`|`String`|`:0`|Sets the initial display number for xserver. You will need to change this if you have multiple instances of this container (`:1` for example)|
 ---
+
+## current deploy method
+`balena push xterminal`

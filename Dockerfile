@@ -22,10 +22,10 @@ COPY src/xinitrc /root/.xinitrc
 
 COPY src/entry.sh src/config.sh VERSION /opt/xserver/
 COPY src/99-vc4.conf /etc/X11/xorg.conf.d/99-vc4.conf
+RUN chmod +x /opt/xserver/*.sh
 
-
-
-ENTRYPOINT  ["/bin/bash", "/opt/xserver/entry.sh"]
+# use the balena entry.sh to run our x11 spinup shell
+ENTRYPOINT  ["/bin/bash", "/bin/entry.sh", "/opt/xserver/entry.sh"]
 
 ENV CURSOR=true \
     UDEV=on \
